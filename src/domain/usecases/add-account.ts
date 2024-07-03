@@ -7,5 +7,5 @@ export interface AddAccountModel {
 }
 
 export interface AddAccount {
-  add(account: AddAccountModel): AccountModel; //metodo add que recebe AddAccountModel e retorna AccountModel
+  add(account: AddAccountModel): Promise<AccountModel>; //metodo add que recebe AddAccountModel e retorna AccountModel
 }
